@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+:root {
+  --Moderate-blue: hsl(238, 40%, 52%);
+  --Soft-Red: hsl(358, 79%, 66%);
+  --Light-grayish-blue: hsl(239, 57%, 85%);
+  --Pale-red: hsl(357, 100%, 86%);
+  --Dark-blue: hsl(212, 24%, 26%);
+  --Grayish-Blue: hsl(211, 10%, 45%);
+  --Light-gray: hsl(223, 19%, 93%);
+  --Very-light-gray: hsl(228, 33%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: Rubik;
+  min-height: 100vh;
+  background-color: var(--Very-light-gray);
+}
+main {
+  width: 40rem;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+}
+.comment {
+  width: 80%;
+  margin: 1rem auto;
+}
+.comment__part,
+.reply__part {
+  background-color: var(--White);
+  width: 100%;
+  display: flex;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+.vote {
+  text-align: center;
+  width: 2rem;
+  background-color: var(--Very-light-gray);
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  height: 5rem;
+}
+.vote > div {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+}
+.vote img {
+  cursor: pointer;
+}
+.main__comment {
+  width: 100%;
+}
+.interact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile {
+  display: flex;
+}
+.comm__profile {
+  display: flex;
+  align-items: center;
+}
+.profile_picture {
+  width: 2rem;
+}
+.profile_name {
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  color: var(--Dark-blue);
+}
+.time_of_comment {
+  color: var(--Grayish-Blue);
+  font-size: 0.6rem;
+}
+.reply {
+  color: var(--Moderate-blue);
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.comment__text {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--Grayish-Blue);
+}
+
+/* REPLY */
+.reply__part {
+  width: 90%;
+  position: relative;
+  left: 10%;
+}
+
+/* ADD */
+.add_comments {
+  background-color: var(--White);
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  height: 5rem;
+  display: flex;
+  align-items: flex-start;
+}
+.add_comments textarea {
+  width: 80%;
+  height: 100%;
+  margin: 0 1rem;
+  border: 1px solid var(--Light-gray);
+  resize: none;
+  outline: none;
+  padding: 0.5rem;
+}
+.add_comments textarea::placeholder {
+  color: var(--Grayish-Blue);
+}
+.add_comments button {
+  background-color: var(--Moderate-blue);
+  border: 0;
+  color: var(--White);
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  outline: none;
+}
+.comment_propic {
+  width: 2rem;
+}
